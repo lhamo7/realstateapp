@@ -1,0 +1,14 @@
+.direction{
+    justify-content: space-between;
+    margin-left: 20%;
+    height:2em;
+    margin-right: 20%;
+    font-size: 20px;
+    display: flex;
+   flex-direction: row;
+   border: 5px black;
+   }
+   .image{
+    height:100px;
+    width:300px;
+   }

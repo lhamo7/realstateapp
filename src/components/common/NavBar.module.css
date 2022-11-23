@@ -1,0 +1,23 @@
+.footerstyle{
+   position:fixed;
+   background-color: red; 
+ left: 0;
+bottom:0;
+right:0;
+height: 100px;
+
+}
+.direction{
+ justify-content: space-between;
+ margin-left: 20%;
+ height:2em;
+ margin-right: 20%;
+ font-size: 20px;
+ display: flex;
+flex-direction: row;
+list-style-type: none;
+}
+.li{
+  flex-direction: column;
+
+}
