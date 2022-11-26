@@ -1,26 +1,32 @@
-import React from 'react'
-import {ReactComponent as ExploreIcon} from '../../assets/exploreIcon.svg'
-import {ReactComponent as LocalOfferIcon} from '../../assets/localOfferIcon.svg'
-import {ReactComponent as ProfileIcon} from '../../assets/personOutlineIcon.svg'
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { ReactComponent as ExploreIcon } from "../../assets/exploreIcon.svg";
+import { ReactComponent as LocalOfferIcon } from "../../assets/localOfferIcon.svg";
+import { ReactComponent as ProfileIcon } from "../../assets/personOutlineIcon.svg";
 
-import styles from './NavBar.module.css'
+import styles from "./NavBar.module.css";
 function NavBar() {
-  return (<footer className= {styles.footerstyle}>
-    <nav >
-      <ul className={styles.direction}>
-        <li className = {styles.li}  ><ExploreIcon fill = '#2c2c2c'/>
-        <p>Explore</p>
-        </li>
-        <li><LocalOfferIcon/>
-        <p>Offers</p>
-        </li>
-        <li>  <ProfileIcon/>
-
-        <p>Profile</p>
-        </li>
-      </ul>
-    </nav>
-  </footer>)
+  const navigate = useNavigate()
+  return (
+    <footer className={styles.footerNav}>
+      <nav className={styles.navBar}>
+        <ul className={styles.footerListItems}>
+          <li onClick= {()=>navigate('/')} className={styles.footerListItem}>
+            <ExploreIcon fill="#2c2c2c" />
+            <p>Explore</p>
+          </li>
+          <li onClick={()=>navigate('/offers' )} className={styles.footerListItem}>
+            <LocalOfferIcon />
+            <p>Offers</p>
+          </li>
+          <li onClick={()=>navigate('/profile')} className={styles.footerListItem}>
+            <ProfileIcon />
+            <p>Profile</p>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  );
 }
 
-export default NavBar
+export default NavBar;

@@ -1,23 +1,25 @@
-.footerstyle{
-   position:fixed;
-   background-color: red; 
- left: 0;
-bottom:0;
-right:0;
-height: 100px;
+.footerNav {
+  position: fixed;
+  background-color: red;
+  left: 0;
+  bottom: 0;
+    right: 0;
+    height: 100px;
+  display: flex;
+    justify-content: center;
+  }
 
+.footerListItems {
+  display: flex;
+  justify-content: space-evenly;
 }
-.direction{
- justify-content: space-between;
- margin-left: 20%;
- height:2em;
- margin-right: 20%;
- font-size: 20px;
- display: flex;
-flex-direction: row;
-list-style-type: none;
+.navBar {
+  width: 100%;
 }
-.li{
-  flex-direction: column;
 
+.footerListItem {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+    flex-direction: column;
 }
