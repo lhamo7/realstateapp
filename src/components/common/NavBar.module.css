@@ -1,12 +1,12 @@
 .footerNav {
   position: fixed;
-  background-color: red;
+  background-color: white;
   left: 0;
   bottom: 0;
     right: 0;
     height: 100px;
   display: flex;
-    justify-content: center;
+  justify-content: center;
   }
 
 .footerListItems {
@@ -21,5 +21,11 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-    flex-direction: column;
+  flex-direction: column;
+}
+
+.footerName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8f8f;
 }

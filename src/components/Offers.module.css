@@ -1,0 +1,26 @@
+.listmain {
+    list-style-type: none;
+
+}
+
+
+
+.pic {
+    border-radius: 2em;
+    height: 250px;
+    width: 250px;
+    margin-top: 15px;
+
+}
+
+.listitem {
+
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.description {
+    margin: 20px;
+}

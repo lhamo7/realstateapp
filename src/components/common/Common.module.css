@@ -1,14 +1,31 @@
 .direction{
     justify-content: space-between;
-    margin-left: 20%;
+    margin-left: 1em;
     height:2em;
-    margin-right: 20%;
+    margin-right: 50px;
     font-size: 20px;
     display: flex;
-   flex-direction: row;
-   border: 5px black;
+    flex-direction: row;
+        border: 5px black;
    }
-   .image{
-    height:100px;
-    width:300px;
+   .image {
+       margin: 5px;
+       border-radius: 2rem;
+       display: flex;
+       height: 200px;
+       width: 550px;
+
+   }
+
+   .pic {
+       height: 50px;
+       width: 50px;
+       display: flex;
+   }
+
+   .mainTitle {
+       display: block;
+       font-size: 700;
+       font-weight: bold;
+       margin-left: 1em;
    }

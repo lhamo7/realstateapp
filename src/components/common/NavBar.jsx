@@ -6,22 +6,28 @@ import { ReactComponent as ProfileIcon } from "../../assets/personOutlineIcon.sv
 
 import styles from "./NavBar.module.css";
 function NavBar() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <footer className={styles.footerNav}>
       <nav className={styles.navBar}>
         <ul className={styles.footerListItems}>
-          <li onClick= {()=>navigate('/')} className={styles.footerListItem}>
-            <ExploreIcon fill="#2c2c2c" />
-            <p>Explore</p>
+          <li className={styles.footerListItem} onClick={() => navigate("/")}>
+            <ExploreIcon fill="#8f8f8f" />
+            <p className={styles.footerName}>Explore</p>
           </li>
-          <li onClick={()=>navigate('/offers' )} className={styles.footerListItem}>
-            <LocalOfferIcon />
-            <p>Offers</p>
+          <li
+            className={styles.footerListItem}
+            onClick={() => navigate("/offers")}
+          >
+            <LocalOfferIcon fill="#8f8f8f" />
+            <p className={styles.footerName}>Offers</p>
           </li>
-          <li onClick={()=>navigate('/profile')} className={styles.footerListItem}>
-            <ProfileIcon />
-            <p>Profile</p>
+          <li
+            className={styles.footerListItem}
+            onClick={() => navigate("/sign-in")}
+          >
+            <ProfileIcon fill="#8f8f8f" />
+            <p className={styles.footerName}>Profile</p>
           </li>
         </ul>
       </nav>

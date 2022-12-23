@@ -1,0 +1,52 @@
+.signUpForm {
+    margin: 0 10px 0 10px
+}
+
+input {
+    margin: 50px;
+    display: block;
+    padding-left: 48px;
+    height: 48px;
+    border-radius: 2em;
+    border: none;
+    width: 85%;
+
+
+}
+
+.nameInput {
+    background: url("../assets/badgeIcon.svg") #fff 3% no-repeat;
+    margin-bottom: 2rem;
+
+}
+
+.emailInput {
+    background: url("../assets/personIcon.svg") #fff 3% no-repeat;
+    margin-bottom: 2rem;
+}
+
+.passwordInput {
+    background: url("../assets/lockIcon.svg") #fff 3% no-repeat;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.forgotPass {
+    color: #0c6;
+    text-align: right;
+    margin-right: 8%;
+}
+
+.arrowColor {
+    border-color: #0c6;
+    fill: #0c6;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
